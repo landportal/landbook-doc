@@ -20,7 +20,7 @@
     rdfs:label "Landbook Ontology"@en;
     rdfs:comment "Vocabulary for describing some properties used in the Landbook project."@en;
     dcterms:created "2014-04-07"^^xsd:date;
-    dcterms:modified "2014-07-10"^^xsd:date;
+    dcterms:modified "2016-02-12"^^xsd:date;
     dcterms:title "Landbook ontology"@en;
     dcterms:author <http://www.di.uniovi.es/~labra#me>, <http://www.weso.es> ;
 	dcterms:license <http://www.opendatacommons.org/licenses/pddl/1.0/> ;
@@ -47,13 +47,13 @@ lb:measurement a owl:ObjectProperty ;
 		  rdfs:label "Measurement"@en
 		  .
 		  
-lb:last_update a owl:DataProperty ;
+lb:last_update a owl:DatatypeProperty ;
         rdfs:domain lb:Indicator ;
 	    rdfs:range xsd:dateTime ;
 		rdfs:label "Last update of a landbook indicator"@en ;
 	    .
 
-lb:starred a owl:DataProperty ;
+lb:starred a owl:DatatypeProperty ;
         rdfs:domain lb:Indicator ;
 	    rdfs:range xsd:boolean ;
 		rdfs:label "Starred observation?"@en ;
@@ -98,14 +98,14 @@ lb:faoReference a owl:ObjectProperty ;
 		rdfs:label "URI in Geopolitical FAO Ontology"@en ;
 	    .
 
-lb:iso3 a owl:DataProperty ;
+lb:iso3 a owl:DatatypeProperty ;
         rdfs:domain lb:Country ;
 	    rdfs:range xsd:string ;
         skos:related geopol:codeISO3 ;
 		rdfs:label "ISO3 country code"@en ;
 	    .
 	
-lb:iso2 a owl:DataProperty ;
+lb:iso2 a owl:DatatypeProperty ;
         rdfs:domain lb:Country ;
 	    rdfs:range xsd:string ;
         skos:related geopol:codeISO2 ;
@@ -119,7 +119,7 @@ lb:is_part_of a owl:ObjectProperty ;
 		rdfs:label "Is part of"@en ;
 	    .
 
-lb:UNCode a owl:DataProperty ;
+lb:UNCode a owl:DatatypeProperty ;
         rdfs:domain lb:Region ;
 	    rdfs:range xsd:string ;
 		rdfs:label "UN code"@en ;
@@ -137,13 +137,13 @@ lb:user a owl:ObjectProperty ;
 		rdfs:label "User that has done an upload"@en ;
 	    .
 		
-lb:timestamp a owl:DataProperty ;
+lb:timestamp a owl:DatatypeProperty ;
         rdfs:domain lb:Upload ;
 	    rdfs:range  xsd:dateTime ;
 		rdfs:label "Timestamp of an upload"@en ;
 	    .
 
-lb:ip a owl:DataProperty ;
+lb:ip a owl:DatatypeProperty ;
         rdfs:domain lb:Upload ;
 	    rdfs:range  xsd:string ;
 		rdfs:label "IP from which an upload has been done"@en ;
