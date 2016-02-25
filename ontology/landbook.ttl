@@ -134,7 +134,7 @@ lb:UNCode a owl:DatatypeProperty ;
 lb:organization a owl:ObjectProperty ;
         rdfs:domain lb:DataSource ;
 	    rdfs:range  lb:Organization ;
-		rdfs:label "UN code"@en ;
+		rdfs:label "Organization associated to a DataSource"@en ;
 	    .
 		
 lb:user a owl:ObjectProperty ;

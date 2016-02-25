@@ -94,7 +94,7 @@
   <owl:ObjectProperty rdf:about="http://purl.org/weso/landbook/ontology#organization">
     <rdfs:domain rdf:resource="http://purl.org/weso/landbook/ontology#DataSource"/>
     <rdfs:range rdf:resource="http://purl.org/weso/landbook/ontology#Organization"/>
-    <rdfs:label xml:lang="en">UN code</rdfs:label>
+    <rdfs:label xml:lang="en">Organization associated to a DataSource</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/weso/landbook/ontology#is_part_of">
     <rdfs:domain>
