@@ -497,7 +497,8 @@ where
   a ( time:DateTimeInterval )
 }
 
-&lt;YearInterval&gt; &amp;&lt;Time&gt; {
+&lt;YearInterval&gt; {
+  &amp; &lt;Time&gt; , 
   time:hasBeginning               xsd:dateTime,
   time:hasEnd                     xsd:dateTime,
   time:hasDateTimeDescription     time:DateTimeDescription,
@@ -505,8 +506,8 @@ where
 }
 
 &lt;MonthInterval&gt; {
-    &amp; &lt;Time&gt; ,
-	time:hasBeginning               xsd:dateTime,
+  &amp; &lt;Time&gt; ,
+  time:hasBeginning               xsd:dateTime,
   time:hasEnd                     xsd:dateTime,
   time:hasDateTimeDescription     time:DateTimeDescription,
   base-time:year                  xsd:int,
@@ -514,7 +515,7 @@ where
 }
 
 &lt;Interval&gt; {
-    &amp; &lt;Time&gt; ,
+  &amp; &lt;Time&gt; ,
   time:hasBeginning               xsd:dateTime,
   time:hasEnd                     xsd:dateTime,
 }
@@ -529,16 +530,17 @@ where
           time:hasBeginning               :instant_2013_1_1          ;
           time:hasEnd                     :instant_2013_12_31        ;
           time:hasDateTimeDescription     :year2013_desc             ;
-          base-time:year                  &quot;2013&quot;^^xsd:int          .
+          base-time:year                  &quot;2013&quot;^^xsd:int  .
 
-:year2013_desc  time:year         &quot;2013&quot;^^xsd:gYear   ;
-                time:unitType     time:unitYear         .
-
-:instant_2013_1_1    a                    time:Instant                      ;
-                     time:inXSDDateTime   &quot;2013-01-01T00:00:00Z&quot;          .
+:year2013_desc  a				  time:DateTimeDescription		;
+				time:year         &quot;2013&quot;^^xsd:gYear   ;
+                time:unitType     time:unitYear         		.
 
 :instant_2013_1_1    a                    time:Instant                      ;
-                     time:inXSDDateTime   &quot;2013-01-01T00:00:00Z&quot;          . 
+                     time:inXSDDateTime   &quot;2013-01-01T00:00:00Z&quot;  .
+
+:instant_2013_1_1    a                    time:Instant                      ;
+                     time:inXSDDateTime   &quot;2013-01-01T00:00:00Z&quot;  . 
 
 </pre>
 </section>
