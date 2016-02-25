@@ -113,7 +113,13 @@ lb:iso2 a owl:DatatypeProperty ;
 	    .
 
 lb:is_part_of a owl:ObjectProperty ;
-        rdfs:domain lb:Region ;
+		rdfs:domain [
+			a owl:Class ;
+			owl:unionOf (
+			  <http://purl.org/weso/landbook/ontology#Country>
+			  <http://purl.org/weso/landbook/ontology#Region>
+			)
+		] ;
 	    rdfs:range lb:Region ;
         rdfs:subPropertyOf dcterms:isPartOf ;
 		rdfs:label "Is part of"@en ;
