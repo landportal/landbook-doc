@@ -104,7 +104,7 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/weso/landbook/ontology#faoURI">
     <rdfs:domain rdf:resource="http://purl.org/weso/landbook/ontology#Country"/>
-    <rdfs:label xml:lang="en">Country Page in FAO website)</rdfs:label>
+    <rdfs:label xml:lang="en">Country Page in FAO website</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/weso/landbook/ontology#user">
     <rdfs:domain rdf:resource="http://purl.org/weso/landbook/ontology#Upload"/>
