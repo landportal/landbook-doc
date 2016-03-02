@@ -125,7 +125,7 @@ prefix shex:          <http://www.w3.org/2013/ShEx/ns#>
 <Slice> {
   a ( qb:Slice)
 , cex:indicator @<Indicator>       # Indicator of this slice
-, lb:dimension  (                  # Different types of dimensions in landbook. Can be:
+, qb:dimension  (                  # Different types of dimensions in landbook. Can be:
                   lb:Time              # time varies
                   lb:Area              # area varies
                 )?
@@ -133,7 +133,7 @@ prefix shex:          <http://www.w3.org/2013/ShEx/ns#>
 }
 
 <Dimension> {
- a ( lb:Dimension )
+ a ( qb:Dimension )
 }
 
 <License> {

@@ -289,7 +289,7 @@ where
 &lt;Slice&gt; {
   a ( qb:Slice)
 , cex:indicator @&lt;Indicator&gt;       # Indicator of this slice
-, lb:dimension  (                  # Different types of dimensions in landbook. Can be:
+, qb:dimension  (                  # Different types of dimensions in landbook. Can be:
                   lb:Time              # time varies
                   lb:Area              # area varies
                 )?
@@ -304,7 +304,7 @@ where
 :slice1 a qb:Slice 
  ; cex:indicator :hdi 
  ; qb:observation :o1, :o2
- ; lb:dimension lb:Area  
+ ; qb:dimension lb:Area  
  ; qb:dataSet :dataSet1 
  .
 </pre>

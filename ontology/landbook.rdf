@@ -78,10 +78,6 @@
     <rdfs:range rdf:resource="http://purl.org/weso/landbook/ontology#Measurement"/>
     <rdfs:label xml:lang="en">Measurement</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://purl.org/weso/landbook/ontology#dimension">
-    <rdfs:domain rdf:resource="http://purl.org/linked-data/cube#Slice"/>
-    <rdfs:label xml:lang="en">Dimension of a slice in landbook</rdfs:label>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.org/weso/landbook/ontology#topic">
     <rdfs:domain rdf:resource="http://purl.org/weso/landbook/ontology#Indicator"/>
     <rdfs:range rdf:resource="http://purl.org/weso/landbook/ontology#Topic"/>

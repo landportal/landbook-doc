@@ -148,18 +148,18 @@ prefix sdmx-code:    <http://purl.org/linked-data/sdmx/2009/code#>
 :slice1 a qb:Slice 
  ; cex:indicator :hdi 
  ; qb:observation :o1, :o2
- ; lb:dimension lb:Area  
+ ; qb:dimension lb:Area  
  ; qb:dataSet :dataSet1 
  .
 
 :slice2 a qb:Slice 
  ; cex:indicator :indipfri1 
  ; qb:observation :o3
- ; lb:dimension lb:Time  
+ ; qb:dimension lb:Time  
  ; qb:dataSet :dataSet2 
  .
 
-:dimension1 a lb:Dimension 
+:dimension1 a qb:Dimension 
  .
 
  

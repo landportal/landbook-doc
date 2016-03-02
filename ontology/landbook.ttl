@@ -70,11 +70,6 @@ lb:indicatorType a owl:ObjectProperty ;
 	    rdfs:label "Indicator type"@en ;
 	    .
 		
-lb:dimension a owl:ObjectProperty ;
-        rdfs:domain qb:Slice ;
-        rdfs:label "Dimension of a slice in landbook"@en ;
-        .		
-		
 lb:dataSource a owl:ObjectProperty ;
         rdfs:domain qb:DataSet ;
 		rdfs:range lb:DataSource ;
