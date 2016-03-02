@@ -145,7 +145,7 @@ The list of namespace prefixes defined in the LandBook is:
 	  <ul>
 	  <li><a href="http://purl.org/weso/ontology/computex#ref-area">cex:ref-area</a>: A geographic area (a country or a region)</li>
 	  <li><a href="http://purl.org/weso/ontology/computex#ref-time">cex:ref-time</a>: The time that is referred by that observation (usually a year or time interval)</li>
-	  <li><a href="http://purl.org/weso/ontology/computex#indicator">cex:indicator</a>:: The reference indicator</li>
+	  <li><a href="http://purl.org/weso/ontology/computex#ref-indicator">cex:ref-indicator</a>: The reference indicator</li>
 	  </ul>
 <p>An observation has a numeric value <a href="http://purl.org/weso/ontology/computex#value">cex:value</a> 
 </p>
@@ -288,7 +288,7 @@ where
 <pre data-lang="text/turtle">
 &lt;Slice&gt; {
   a ( qb:Slice)
-, cex:indicator @&lt;Indicator&gt;       # Indicator of this slice
+, cex:ref-indicator @&lt;Indicator&gt;       # Indicator of this slice
 , qb:dimension  (                  # Different types of dimensions in landbook. Can be:
                   lb:Time              # time varies
                   lb:Area              # area varies
@@ -302,7 +302,7 @@ where
 <h2>Example</h2>
 <pre data-lang="text/turtle">
 :slice1 a qb:Slice 
- ; cex:indicator :hdi 
+ ; cex:ref-indicator :hdi 
  ; qb:observation :o1, :o2
  ; qb:dimension lb:Area  
  ; qb:dataSet :dataSet1 

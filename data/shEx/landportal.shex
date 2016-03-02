@@ -124,7 +124,7 @@ prefix shex:          <http://www.w3.org/2013/ShEx/ns#>
 
 <Slice> {
   a ( qb:Slice)
-, cex:indicator @<Indicator>       # Indicator of this slice
+, cex:ref-indicator @<Indicator>       # Indicator of this slice
 , qb:dimension  (                  # Different types of dimensions in landbook. Can be:
                   lb:Time              # time varies
                   lb:Area              # area varies

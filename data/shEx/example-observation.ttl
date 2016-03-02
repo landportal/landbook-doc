@@ -146,14 +146,14 @@ prefix sdmx-code:    <http://purl.org/linked-data/sdmx/2009/code#>
 # Slices 
 
 :slice1 a qb:Slice 
- ; cex:indicator :hdi 
+ ; cex:ref-indicator :hdi 
  ; qb:observation :o1, :o2
  ; qb:dimension lb:Area  
  ; qb:dataSet :dataSet1 
  .
 
 :slice2 a qb:Slice 
- ; cex:indicator :indipfri1 
+ ; cex:ref-indicator :indipfri1 
  ; qb:observation :o3
  ; qb:dimension lb:Time  
  ; qb:dataSet :dataSet2 

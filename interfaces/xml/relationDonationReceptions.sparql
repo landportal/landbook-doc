@@ -18,9 +18,9 @@ prefix cex:			<http://purl.org/weso/ontology/computex#>
 SELECT * WHERE {
  ?x lp:country ?receiver ;
     cex:value ?value ;
-	cex:indicator indicator:reception ;
+	cex:ref-indicator indicator:reception ;
 	lp:relatedObs ?y .
  ?y lp:country ?giver ;
-    cex:indicator indicator:donation .
+    cex:ref-indicator indicator:donation .
 	
 }

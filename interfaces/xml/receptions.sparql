@@ -18,5 +18,5 @@ prefix cex:			<http://purl.org/weso/ontology/computex#>
 SELECT * WHERE {
  ?x lp:country ?country ;
     cex:value ?value ;
-	cex:indicator indicator:reception .
+	cex:ref-indicator indicator:reception .
 }

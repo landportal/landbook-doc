@@ -34,7 +34,7 @@ obs:obs2456 a qb:Observation ;
  lp:country country:FRA ;
  cex:value 25000 ;
  lp:measurement currency:EURO ;
- cex:indicator indicator:donation ;
+ cex:ref-indicator indicator:donation ;
  lp:time year:2010 ;
  lp:relatedObs obs:obs9911 ;
  lp:relationProperty relation:donation .
@@ -43,7 +43,7 @@ obs:obs2145 a qb:Observation ;
  lp:country country:ESP ;
  cex:value 2000 ;
  lp:measurement currency:EURO ;
- cex:indicator indicator:donation ;
+ cex:ref-indicator indicator:donation ;
  lp:time year:2010 ;
  lp:relatedObs obs:obs2682 ;
  lp:relationProperty relation:donation .
@@ -52,7 +52,7 @@ obs:obs2682 a qb:Observation ;
  lp:country country:PER ;
  cex:value 2000 ;
  lp:measurement currency:EURO ;
- cex:indicator indicator:reception ;
+ cex:ref-indicator indicator:reception ;
  lp:time year:2010 ;
  lp:relatedObs obs:obs2145 ;
  lp:relationProperty relation:reception .
@@ -61,7 +61,7 @@ obs:obs9911 a qb:Observation ;
  lp:country country:PER ;
  cex:value 25000 ;
  lp:measurement currency:EURO ;
- cex:indicator indicator:reception ;
+ cex:ref-indicator indicator:reception ;
  lp:time year:2010 ;
  lp:relatedObs obs:obs2456 ;
  lp:relationProperty relation:reception .
