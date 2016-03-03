@@ -502,7 +502,6 @@ where
   time:hasBeginning               xsd:dateTime,
   time:hasEnd                     xsd:dateTime,
   time:hasDateTimeDescription     time:DateTimeDescription,
-  base-time:year                  xsd:int  
 }
 
 &lt;MonthInterval&gt; {
@@ -510,8 +509,6 @@ where
   time:hasBeginning               xsd:dateTime,
   time:hasEnd                     xsd:dateTime,
   time:hasDateTimeDescription     time:DateTimeDescription,
-  base-time:year                  xsd:int,
-  base-time:month                 xsd:int
 }
 
 &lt;Interval&gt; {
@@ -529,8 +526,7 @@ where
 :year2013 a                               time:DateTimeInterval      ;
           time:hasBeginning               :instant_2013_1_1          ;
           time:hasEnd                     :instant_2013_12_31        ;
-          time:hasDateTimeDescription     :year2013_desc             ;
-          base-time:year                  &quot;2013&quot;^^xsd:int  .
+          time:hasDateTimeDescription     :year2013_desc             .
 
 :year2013_desc  a				  time:DateTimeDescription		;
 				time:year         &quot;2013&quot;^^xsd:gYear   ;
@@ -919,7 +915,6 @@ where
     PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt;
     PREFIX qb: &lt;http://purl.org/linked-data/cube#&gt; 
     PREFIX base-ind: &lt;http://book.landportal.org/indicator/&gt;
-    PREFIX base-time: &lt;http://book.landportal.org/time/&gt;
 
     select ?country_name, ?year, ?value where
        {
@@ -933,9 +928,11 @@ where
          ?country rdf:type cex:Area   ;
                   rdfs:label ?country_name    .
 
-         ?date base-time:year ?year .
+		 ?date  time:hasDateTimeDescription ?date_desc .
 
-         FILTER (?year &gt; 2011)
+		 ?date_desc time:year ?year .
+
+         FILTER (?year >= "2011"^^xsd:gYear)
 
        }
   </pre>
