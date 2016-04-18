@@ -154,6 +154,7 @@ prefix shex:          <http://www.w3.org/2013/ShEx/ns#>
 <Organization> {
   a ( org:Organization )
 , rdfs:label xsd:string
+, org:identifier xsd:string
 , foaf:homepage shex:IRI
 , org:subOrganizationOf @<Organization>*
 , org:hasSubOrganization @<Organization>*
