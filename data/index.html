@@ -97,7 +97,7 @@ This is the list of external namespace prefixes employed:
 <section>
 <h2>Base URI</h2>
 <p>The base URI of the LandBook data is
-<code><a href="http://book.landportal.org/">http://book.landportal.org</a></code>. 
+<code><a href="http://data.landportal.info/">http://data.landportal.info</a></code>. 
 
 Along this document <code>{base}</code> refers to the previous URI.
 </p>
@@ -108,9 +108,9 @@ Along this document <code>{base}</code> refers to the previous URI.
 The list of namespace prefixes defined in the LandBook is:
 <dl>
 <dt><code>lb</code></dt><dd><code><a href="http://purl.org/weso/landbook/ontology#">http://purl.org/weso/landbook/ontology#</a></code></dd>
-<dt><code>ind</code></dt><dd><code><a href="http://book.landportal.org/indicator">{base}/indicator</a></code></dd>
-<dt><code>obs</code></dt><dd><code><a href="http://book.landportal.org/observation">{base}/observation</a></code></dd>
-<dt><code>country</code></dt><dd><code><a href="http://book.landportal.org/country">{base}/country</a></code></dd>
+<dt><code>ind</code></dt><dd><code><a href="http://data.landportal.info/indicator">{base}/indicator</a></code></dd>
+<dt><code>obs</code></dt><dd><code><a href="http://data.landportal.info/observation">{base}/observation</a></code></dd>
+<dt><code>country</code></dt><dd><code><a href="http://data.landportal.info/country">{base}/country</a></code></dd>
 </dl>
 
 <section>
@@ -807,7 +807,7 @@ where
     PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt;
     PREFIX cex: &lt;http://purl.org/weso/ontology/computex#&gt;
     PREFIX lb: &lt;http://purl.org/weso/landbook/ontology#&gt;
-    PREFIX base-topic: &lt;http://book.landportal.org/topic/&gt;
+    PREFIX base-topic: &lt;http://data.landportal.info/topic/&gt;
 
     select ?indicator, ?name, ?description  where 
     {
@@ -827,7 +827,7 @@ where
     PREFIX cex: &lt;http://purl.org/weso/ontology/computex#&gt;
     PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt;
     PREFIX lb: &lt;http://purl.org/weso/landbook/ontology#&gt;
-    PREFIX base: &lt;http://book.landportal.org/&gt;
+    PREFIX base: &lt;http://data.landportal.info/&gt;
 
 
     select ?iso3, ?name, ?url where 
@@ -851,8 +851,8 @@ where
     PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt;
     PREFIX lb: &lt;http://purl.org/weso/landbook/ontology#&gt;
     PREFIX qb: &lt;http://purl.org/linked-data/cube#&gt; 
-    PREFIX base: &lt;http://book.landportal.org/&gt;
-    PREFIX base-ind: &lt;http://book.landportal.org/indicator/&gt;
+    PREFIX base: &lt;http://data.landportal.info/&gt;
+    PREFIX base-ind: &lt;http://data.landportal.info/indicator/&gt;
 
     select ?iso3, ?name, ?url where                 # Print iso3, name and url 
     {
@@ -883,7 +883,7 @@ where
     PREFIX lb: &lt;http://purl.org/weso/landbook/ontology#&gt;
     PREFIX qb: &lt;http://purl.org/linked-data/cube#&gt; 
     PREFIX w3: &lt;http://www.w3.org/ns/org#&gt;
-    PREFIX : &lt;http://book.landportal.org/&gt;
+    PREFIX : &lt;http://data.landportal.info/&gt;
 
     select ?iso3, ?name, ?url where  
     {
@@ -914,7 +914,7 @@ where
     PREFIX cex: &lt;http://purl.org/weso/ontology/computex#&gt;
     PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt;
     PREFIX qb: &lt;http://purl.org/linked-data/cube#&gt; 
-    PREFIX base-ind: &lt;http://book.landportal.org/indicator/&gt;
+    PREFIX base-ind: &lt;http://data.landportal.info/indicator/&gt;
 
     select ?country_name, ?year, ?value where
        {
