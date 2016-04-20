@@ -108,9 +108,6 @@ Along this document <code>{base}</code> refers to the previous URI.
 The list of namespace prefixes defined in the LandBook is:
 <dl>
 <dt><code>lb</code></dt><dd><code><a href="http://purl.org/weso/landbook/ontology#">http://purl.org/weso/landbook/ontology#</a></code></dd>
-<dt><code>ind</code></dt><dd><code><a href="http://data.landportal.info/indicator">{base}/indicator</a></code></dd>
-<dt><code>obs</code></dt><dd><code><a href="http://data.landportal.info/observation">{base}/observation</a></code></dd>
-<dt><code>country</code></dt><dd><code><a href="http://data.landportal.info/country">{base}/country</a></code></dd>
 </dl>
 
 <section>
@@ -150,11 +147,11 @@ The list of namespace prefixes defined in the LandBook is:
 
 <section> 
 <h2>URI Template</h2>
-<pre data-lang="text/turtle">{base}/observation/{observationId}</pre>
+<pre data-lang="text/turtle">{base}/dataset/{datasetId}/observation/{observationId}</pre>
 where
 <pre data-lang="text/turtle">
 {base} = Base URI for LandPortal 
-{Dataset} = Dataset from which this observation has been obtained
+{datasetId} = Dataset from which this observation has been obtained
 {observationId} = Id of this observation
 </pre>
 </section>
