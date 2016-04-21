@@ -710,6 +710,47 @@ where
 
 </section> <!-- Uploads -->
 
+
+<section>
+<h2 id="catalog">Catalog</h2>
+<p>Represents a catalog: a curated collection of metadata about datasets.</p>
+
+<section>
+<h2>URI Template</h2>
+<pre data-lang="text/turtle">{base}/catalog</pre>
+where
+<pre data-lang="text/turtle">
+{base} = Base URI for LandBook
+</pre>
+</section>
+
+<section>
+<h2>Schema</h2>
+<pre data-lang="text/turtle">
+&lt;Catalog&gt; {                   # Represents a catalog, a curated collection of metadata about datasets
+  a              ( dcat:Catalog )    
+, rdfs:label xsd:string             # A label
+, foaf:homepage shex:IRI            # The homepage of the catalog
+, dcterms:publisher shex:IRI        # The publisher
+, dcat:dataset   @&lt;Dataset&gt;*  # Dataset included in this catalog
+
+}</pre>
+</section>
+
+<section>
+<h2>Example</h2>
+<pre data-lang="text/turtle">
+:catalog a dcat:Catalog
+ ; rdfs:label &quot;The Land Portal catalog&quot;@en 
+ ; foaf:homepage &lt;http://landportal.info/data&gt;
+ ; dct:publisher &lt;http://landportal.info&gt;
+ ; dcat:dataset :dataset1
+ .
+</pre>
+</section>
+
+</section> <!-- Catalog -->
+
 </section> <!-- Entities -->
 
 <section>
